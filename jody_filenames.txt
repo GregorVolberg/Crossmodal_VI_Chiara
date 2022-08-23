@@ -13,12 +13,12 @@ JodyPrody_Squares_02 SD44
 JodyPrody_Squares_03 SD45
 JodyPrody_Squares_04 SD46
 JodyPrody_Squares_05 SD47
-JodyPrody_Squares_07 SD49 
+JodyPrody_Squares_07 SD49
 JodyPrody_Squares_06 SD48
 JodyPrody_Squares_08 SD50
 JodyPrody_Squares_09 SD51
 JodyPrody_Squares_10 SD52
-JodyPrody_Triangle_01 SD53 
+JodyPrody_Triangle_01 SD53
 JodyPrody_Triangle_02 SD54
 JodyPrody_Triangle_03 SD60
 JodyPrody_Triangle_04 SD61

@@ -3,13 +3,13 @@
 # Die Beschriftungen für Werte wird ebenfalls als Attribute (attr) abgelegt.
 
 # GV: some modifications
-library(tidyverse)
+#library(tidyverse)
 
-setwd("./soscisurv")
-ds_file = "rdata_TheartofJudy_2022-08-11_16-32.csv"
+#setwd("")
+ds_file = "./soscisurv/rdata_TheartofJudy_2022-08-11_16-32.csv"
 
 ds = read.table(
-  file=ds_file, encoding="UTF-8", fileEncoding="UTF-8",
+  file=ds_file, encoding="UTF-8", 
   header = FALSE, sep = "\t", quote = "\"",
   dec = ".", row.names = "CASE",
   col.names = c(
@@ -696,105 +696,85 @@ comment(ds$SD57_04) = "Emotion: Angst"
 comment(ds$SD57_05) = "Emotion: Ekel"
 comment(ds$SD57_06) = "Emotion: Überraschung"
 comment(ds$SD29_01) = "Studiengang: [01]"
-comment(ds$SD30_01) = "VP: [01]"
-comment(ds$SD32) = "Copyright"
-comment(ds$SD65) = "Datenschutz und Freiwilligkeit"
-comment(ds$TIME001) = "Verweildauer Seite 1"
-comment(ds$TIME002) = "Verweildauer Seite 2"
-comment(ds$TIME003) = "Verweildauer Seite 3"
-comment(ds$TIME004) = "Verweildauer Seite 4"
-comment(ds$TIME005) = "Verweildauer Seite 5"
-comment(ds$TIME006) = "Verweildauer Seite 6"
-comment(ds$TIME007) = "Verweildauer Seite 7"
-comment(ds$TIME008) = "Verweildauer Seite 8"
-comment(ds$TIME009) = "Verweildauer Seite 9"
-comment(ds$TIME010) = "Verweildauer Seite 10"
-comment(ds$TIME011) = "Verweildauer Seite 11"
-comment(ds$TIME012) = "Verweildauer Seite 12"
-comment(ds$TIME013) = "Verweildauer Seite 13"
-comment(ds$TIME014) = "Verweildauer Seite 14"
-comment(ds$TIME015) = "Verweildauer Seite 15"
-comment(ds$TIME016) = "Verweildauer Seite 16"
-comment(ds$TIME017) = "Verweildauer Seite 17"
-comment(ds$TIME018) = "Verweildauer Seite 18"
-comment(ds$TIME019) = "Verweildauer Seite 19"
-comment(ds$TIME020) = "Verweildauer Seite 20"
-comment(ds$TIME021) = "Verweildauer Seite 21"
-comment(ds$TIME022) = "Verweildauer Seite 22"
-comment(ds$TIME023) = "Verweildauer Seite 23"
-comment(ds$TIME024) = "Verweildauer Seite 24"
-comment(ds$TIME025) = "Verweildauer Seite 25"
-comment(ds$TIME026) = "Verweildauer Seite 26"
-comment(ds$TIME027) = "Verweildauer Seite 27"
-comment(ds$TIME028) = "Verweildauer Seite 28"
-comment(ds$TIME029) = "Verweildauer Seite 29"
-comment(ds$TIME030) = "Verweildauer Seite 30"
-comment(ds$TIME031) = "Verweildauer Seite 31"
-comment(ds$TIME032) = "Verweildauer Seite 32"
-comment(ds$TIME033) = "Verweildauer Seite 33"
-comment(ds$TIME034) = "Verweildauer Seite 34"
-comment(ds$TIME035) = "Verweildauer Seite 35"
-comment(ds$TIME036) = "Verweildauer Seite 36"
-comment(ds$TIME037) = "Verweildauer Seite 37"
-comment(ds$TIME038) = "Verweildauer Seite 38"
-comment(ds$TIME039) = "Verweildauer Seite 39"
-comment(ds$TIME040) = "Verweildauer Seite 40"
-comment(ds$TIME041) = "Verweildauer Seite 41"
-comment(ds$TIME042) = "Verweildauer Seite 42"
-comment(ds$TIME043) = "Verweildauer Seite 43"
-comment(ds$TIME044) = "Verweildauer Seite 44"
-comment(ds$TIME045) = "Verweildauer Seite 45"
-comment(ds$TIME046) = "Verweildauer Seite 46"
-comment(ds$TIME_SUM) = "Verweildauer gesamt (ohne Ausreißer)"
-comment(ds$MAILSENT) = "Versandzeitpunkt der Einladungsmail (nur für nicht-anonyme Adressaten)"
-comment(ds$LASTDATA) = "Zeitpunkt als der Datensatz das letzte mal geändert wurde"
-comment(ds$FINISHED) = "Wurde die Befragung abgeschlossen (letzte Seite erreicht)?"
-comment(ds$Q_VIEWER) = "Hat der Teilnehmer den Fragebogen nur angesehen, ohne die Pflichtfragen zu beantworten?"
-comment(ds$LASTPAGE) = "Seite, die der Teilnehmer zuletzt bearbeitet hat"
-comment(ds$MAXPAGE) = "Letzte Seite, die im Fragebogen bearbeitet wurde"
-comment(ds$MISSING) = "Anteil fehlender Antworten in Prozent"
-comment(ds$MISSREL) = "Anteil fehlender Antworten (gewichtet nach Relevanz)"
-comment(ds$TIME_RSI) = "Maluspunkte für schnelles Ausfüllen"
-comment(ds$DEG_TIME) = "Maluspunkte für schnelles Ausfüllen"
+# comment(ds$SD30_01) = "VP: [01]"
+# comment(ds$SD32) = "Copyright"
+# comment(ds$SD65) = "Datenschutz und Freiwilligkeit"
+# comment(ds$TIME001) = "Verweildauer Seite 1"
+# comment(ds$TIME002) = "Verweildauer Seite 2"
+# comment(ds$TIME003) = "Verweildauer Seite 3"
+# comment(ds$TIME004) = "Verweildauer Seite 4"
+# comment(ds$TIME005) = "Verweildauer Seite 5"
+# comment(ds$TIME006) = "Verweildauer Seite 6"
+# comment(ds$TIME007) = "Verweildauer Seite 7"
+# comment(ds$TIME008) = "Verweildauer Seite 8"
+# comment(ds$TIME009) = "Verweildauer Seite 9"
+# comment(ds$TIME010) = "Verweildauer Seite 10"
+# comment(ds$TIME011) = "Verweildauer Seite 11"
+# comment(ds$TIME012) = "Verweildauer Seite 12"
+# comment(ds$TIME013) = "Verweildauer Seite 13"
+# comment(ds$TIME014) = "Verweildauer Seite 14"
+# comment(ds$TIME015) = "Verweildauer Seite 15"
+# comment(ds$TIME016) = "Verweildauer Seite 16"
+# comment(ds$TIME017) = "Verweildauer Seite 17"
+# comment(ds$TIME018) = "Verweildauer Seite 18"
+# comment(ds$TIME019) = "Verweildauer Seite 19"
+# comment(ds$TIME020) = "Verweildauer Seite 20"
+# comment(ds$TIME021) = "Verweildauer Seite 21"
+# comment(ds$TIME022) = "Verweildauer Seite 22"
+# comment(ds$TIME023) = "Verweildauer Seite 23"
+# comment(ds$TIME024) = "Verweildauer Seite 24"
+# comment(ds$TIME025) = "Verweildauer Seite 25"
+# comment(ds$TIME026) = "Verweildauer Seite 26"
+# comment(ds$TIME027) = "Verweildauer Seite 27"
+# comment(ds$TIME028) = "Verweildauer Seite 28"
+# comment(ds$TIME029) = "Verweildauer Seite 29"
+# comment(ds$TIME030) = "Verweildauer Seite 30"
+# comment(ds$TIME031) = "Verweildauer Seite 31"
+# comment(ds$TIME032) = "Verweildauer Seite 32"
+# comment(ds$TIME033) = "Verweildauer Seite 33"
+# comment(ds$TIME034) = "Verweildauer Seite 34"
+# comment(ds$TIME035) = "Verweildauer Seite 35"
+# comment(ds$TIME036) = "Verweildauer Seite 36"
+# comment(ds$TIME037) = "Verweildauer Seite 37"
+# comment(ds$TIME038) = "Verweildauer Seite 38"
+# comment(ds$TIME039) = "Verweildauer Seite 39"
+# comment(ds$TIME040) = "Verweildauer Seite 40"
+# comment(ds$TIME041) = "Verweildauer Seite 41"
+# comment(ds$TIME042) = "Verweildauer Seite 42"
+# comment(ds$TIME043) = "Verweildauer Seite 43"
+# comment(ds$TIME044) = "Verweildauer Seite 44"
+# comment(ds$TIME045) = "Verweildauer Seite 45"
+# comment(ds$TIME046) = "Verweildauer Seite 46"
+# comment(ds$TIME_SUM) = "Verweildauer gesamt (ohne Ausreißer)"
+# comment(ds$MAILSENT) = "Versandzeitpunkt der Einladungsmail (nur für nicht-anonyme Adressaten)"
+# comment(ds$LASTDATA) = "Zeitpunkt als der Datensatz das letzte mal geändert wurde"
+# comment(ds$FINISHED) = "Wurde die Befragung abgeschlossen (letzte Seite erreicht)?"
+# comment(ds$Q_VIEWER) = "Hat der Teilnehmer den Fragebogen nur angesehen, ohne die Pflichtfragen zu beantworten?"
+# comment(ds$LASTPAGE) = "Seite, die der Teilnehmer zuletzt bearbeitet hat"
+# comment(ds$MAXPAGE) = "Letzte Seite, die im Fragebogen bearbeitet wurde"
+# comment(ds$MISSING) = "Anteil fehlender Antworten in Prozent"
+# comment(ds$MISSREL) = "Anteil fehlender Antworten (gewichtet nach Relevanz)"
+# comment(ds$TIME_RSI) = "Maluspunkte für schnelles Ausfüllen"
+# comment(ds$DEG_TIME) = "Maluspunkte für schnelles Ausfüllen"
+# 
+# 
+# 
+# # Assure that the comments are retained in subsets
+# as.data.frame.avector = as.data.frame.vector
+# `[.avector` <- function(x,i,...) {
+#   r <- NextMethod("[")
+#   mostattributes(r) <- attributes(x)
+#   r
+# }
+# ds_tmp = data.frame(
+#   lapply(ds, function(x) {
+#     structure( x, class = c("avector", class(x) ) )
+#   } )
+# )
+# mostattributes(ds_tmp) = attributes(ds)
+# ds = ds_tmp
+# rm(ds_tmp)
 
 
-
-# Assure that the comments are retained in subsets
-as.data.frame.avector = as.data.frame.vector
-`[.avector` <- function(x,i,...) {
-  r <- NextMethod("[")
-  mostattributes(r) <- attributes(x)
-  r
-}
-ds_tmp = data.frame(
-  lapply(ds, function(x) {
-    structure( x, class = c("avector", class(x) ) )
-  } )
-)
-mostattributes(ds_tmp) = attributes(ds)
-ds = ds_tmp
-rm(ds_tmp)
-
-
-ds = ds %>% select(-starts_with("TIME"))
-
-ds %>% select(vp = SD30_01,
-              sex = SD01,
-              age = SD02_01,
-              education  = SD10,
-              occupation = SD14,
-              hearImpair = SD20,
-              seeImpair  = SD24,
-              concentration = SD23,
-              remarks      = SD18_01,
-              studyAims    = SD19_01)
-
-# unvollständig
-nms = ds %>% 
-      select("SD35_01":"SD57_06") %>%
-      names() %>%
-      str_sub(., 3, 4) %>%
-      as.numeric() %>%
-      unique()
 
 
